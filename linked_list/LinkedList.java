@@ -1,14 +1,15 @@
+/**
+ * - Linked List Implementation
+ * - Singly-linked
+ * - add to front only
+ *
+ */
+
+// TODO add to tail
+
 package linked_list;
 
 
-// TODO Docs!
-/*
-* Singly -Linked List
-* */
-
-//***************************************************************************//
-
-// TODO Convert to Generics
 class Node {
     //attributes
     private int data;
