@@ -1,6 +1,6 @@
-package mypack;
+package helpers;
 
-public class MyPackageClass {
+public class helpers {
 
     public static void testMethod(){
         System.out.println("Holy shit it works");

@@ -1,4 +1,4 @@
-package mypack;
+package objects;
 
 public class Animal {
 
@@ -19,4 +19,5 @@ public class Animal {
     public String toString(){
         return this.name + this.type + this.numOfLegs;
     }
+
 }
