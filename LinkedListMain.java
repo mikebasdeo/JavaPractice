@@ -1,6 +1,10 @@
 //import relevant packages
 import objects.LinkedList;
 
+// TODOD Add to Tail
+// TODO Traverse
+// TODO Reverse
+// TODO Try to use to solve some questions?
 
 public class LinkedListMain {
 

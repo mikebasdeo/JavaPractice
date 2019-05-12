@@ -1,5 +1,7 @@
 package objects;
 
+
+// TODO Docs!
 /*
 * Singly -Linked List
 * */
@@ -34,7 +36,7 @@ class Node {
 
 //***************************************************************************//
 public class LinkedList {
-    
+
     //attributes
     private Node head;
 

@@ -5,9 +5,10 @@ import objects.*;
 /**
  * - Basic example of how to hook up java files in different packages
  *
- * @method: testMethod() - static method example inside the helpers package
+ * @staticmethod: testMethod() - static method example inside the helpers package
  *
- * @class: Dog inherits from Animal withing the objects package
+ * @class: Animal inside objects package
+ * @class: Dog inherits from Animal within the objects package
  * @method: numOfLegs() method overridden within the Dog class
         */
 public class Main {
