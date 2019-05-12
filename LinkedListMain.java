@@ -5,6 +5,7 @@ import objects.LinkedList;
 // TODO Traverse
 // TODO Reverse
 // TODO Try to use to solve some questions?
+// TODO Generics
 
 public class LinkedListMain {
 
