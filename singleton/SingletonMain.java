@@ -13,7 +13,11 @@ public class SingletonMain {
 
         Singleton.getInstance();
 
-        System.out.println(Singleton.getDatesList().getFirst());
+        System.out.println(Singleton.getDatesList().size());
+
+        Singleton.removeFirstMonth();
+
+        System.out.println(Singleton.getDatesList().size());
 
 
     }
