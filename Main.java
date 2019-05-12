@@ -10,8 +10,19 @@ public class Main {
         helpers.testMethod();
 
         // basic object imported from an objects package
-        Animal myAnimal = new Animal("Chubs", "Cat", 4);
+        Animal myBird = new Animal("Iago", "Bird", 2);
 
-        System.out.println(myAnimal.toString());
+        // Try to create a Dog object which inherits from Animal
+        Dog myDog = new Dog("Margo", "German Shepard", 4);
+
+
+        System.out.println(myBird.toString());
+        System.out.println(myBird.getNumOfLegs());
+
+        System.out.println(myDog.toString());
+        System.out.println(myDog.getNumOfLegs());
+
+
+
     }
 }

@@ -20,4 +20,8 @@ public class Animal {
         return this.name + this.type + this.numOfLegs;
     }
 
+    public int getNumOfLegs(){
+        return this.numOfLegs;
+    }
+
 }
