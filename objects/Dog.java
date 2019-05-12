@@ -2,7 +2,6 @@ package objects;
 
 public class Dog extends Animal{
 
-
     //attributes
 
 
@@ -10,7 +9,6 @@ public class Dog extends Animal{
     public Dog(String _name, String _type, int _numOfLegs){
         super(_name, _type, _numOfLegs);
     }
-
 
     //methods
     @Override
