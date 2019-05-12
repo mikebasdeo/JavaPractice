@@ -1,23 +1,25 @@
 /**
- * - Some java fundamentals...
+ * - Java fundamentals practice
  *
  * @staticmethod: testMethod() - static method example inside the helpers package
  *
- * @class: Animal inside objects package. Implements interface from 'helper/AnimalInterface.java'
- * @class: Dog inherits from Animal within the objects package
+ * @class: Animal inside linked_list package. Implements interface from 'helper/AnimalInterface.java'
+ * @class: Dog inherits from Animal within the linked_list package
  * @method: numOfLegs() method overridden within the Dog class. Also enforeced by
+ *
         */
-import helpers.*;
-import objects.*;
 
-public class AnimalMain {
+package zoo;
+import zoo.helpers.helpers;
+
+public class ZooMain {
 
     public static void main(String[] args) {
 
         // static method imported from helpers package
         helpers.testMethod();
 
-        // object imported from objects package
+        // object imported from linked_list package
         Animal myBird = new Animal("Iago", "Bird", 2);
 
         // Create a Dog object which inherits from Animal

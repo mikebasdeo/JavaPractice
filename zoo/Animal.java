@@ -1,5 +1,4 @@
-package objects;
-import helpers.AnimalInterface;
+package zoo;
 
 public class Animal implements AnimalInterface{
 

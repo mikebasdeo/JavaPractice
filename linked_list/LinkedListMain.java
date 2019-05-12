@@ -1,17 +1,19 @@
-//import relevant packages
-import objects.LinkedList;
-
-// TODOD Add to Tail
+// TODO Add to Tail
 // TODO Traverse
 // TODO Reverse
 // TODO Try to use to solve some questions?
 // TODO Generics
 
+package linked_list;
+import linked_list.helpers.helpers;
+
 public class LinkedListMain {
 
     public static void main(String[] args){
 
-        System.out.println("Testing LinkedListMain");
+        helpers.testMethod();
+
+        System.out.println("Testing linked_list.LinkedListMain");
 
         //try to make a linked list here. return the toString of the Node.
         LinkedList myLinkedList = new LinkedList();
@@ -23,8 +25,5 @@ public class LinkedListMain {
         myLinkedList.addToHead(1);
 
         System.out.println(myLinkedList.toString());
-
     }
-
-
 }

@@ -1,4 +1,4 @@
-package helpers;
+package zoo.helpers;
 
 public class helpers {
 

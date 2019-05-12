@@ -1,3 +1,4 @@
+package generics;
 
 public class GenericMethodTest {
     // generic method printArray

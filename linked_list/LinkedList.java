@@ -1,4 +1,4 @@
-package objects;
+package linked_list;
 
 
 // TODO Docs!
