@@ -34,7 +34,7 @@ class Node {
 
 //***************************************************************************//
 public class LinkedList {
-
+    
     //attributes
     private Node head;
 
@@ -54,23 +54,19 @@ public class LinkedList {
             _new_node.setNext(this.head);
             this.head = _new_node;
         }
-
     }
 
 
 
     @Override
     public String toString() {
-
         String stringToReturn = "";
 
         while(this.head.getNext() != null){
             stringToReturn = stringToReturn +" "+ this.head.toString();
             this.head = this.head.getNext();
-
         }
         stringToReturn = stringToReturn +" "+ this.head.toString();
-
         return stringToReturn;
     }
 }
