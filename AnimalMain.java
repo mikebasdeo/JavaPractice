@@ -1,24 +1,23 @@
-//import mypack.MyPackageClass;
-import helpers.*;
-import objects.*;
-
 /**
- * - Basic example of how to hook up java files in different packages
+ * - Some java fundamentals...
  *
  * @staticmethod: testMethod() - static method example inside the helpers package
  *
- * @class: Animal inside objects package
+ * @class: Animal inside objects package. Implements interface from 'helper/AnimalInterface.java'
  * @class: Dog inherits from Animal within the objects package
- * @method: numOfLegs() method overridden within the Dog class
+ * @method: numOfLegs() method overridden within the Dog class. Also enforeced by
         */
-public class Main {
+import helpers.*;
+import objects.*;
+
+public class AnimalMain {
 
     public static void main(String[] args) {
 
-        // basic static method imported from helpers package
+        // static method imported from helpers package
         helpers.testMethod();
 
-        // basic object imported from objects package
+        // object imported from objects package
         Animal myBird = new Animal("Iago", "Bird", 2);
 
         // Create a Dog object which inherits from Animal
@@ -29,8 +28,6 @@ public class Main {
 
         System.out.println(myDog.toString());
         System.out.println(myDog.getNumOfLegs());
-
-
 
     }
 }

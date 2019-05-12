@@ -1,6 +1,7 @@
 package objects;
+import helpers.AnimalInterface;
 
-public class Animal {
+public class Animal implements AnimalInterface{
 
     //attributes
     private String name;
