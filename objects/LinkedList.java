@@ -21,9 +21,13 @@ class Node {
         this.next = _new_next_node;
     }
 
+    public Node getNext(){
+        return this.next;
+    }
+
     @Override
     public String toString() {
-        return "Node=" +this.data;
+        return Integer.toString(this.data);
     }
 }
 //***************************************************************************//
@@ -40,9 +44,6 @@ public class LinkedList {
     }
 
     //methods
-    // which methods do we need?
-    // 1st addToHead
-
     public void addToHead(int _data){
 
         Node _new_node = new Node(_data);
@@ -50,7 +51,7 @@ public class LinkedList {
         if(this.head == null){
             this.head = _new_node;
         } else {
-            _new_node.setNext(_new_node);
+            _new_node.setNext(this.head);
             this.head = _new_node;
         }
 
@@ -61,14 +62,15 @@ public class LinkedList {
     @Override
     public String toString() {
 
-        // ugly fix for returning a null instead of a string
-        String stringToReturn;
-        if(this.head == null){
-            stringToReturn = "null";
+        String stringToReturn = "";
+
+        while(this.head.getNext() != null){
+            stringToReturn = stringToReturn +" "+ this.head.toString();
+            this.head = this.head.getNext();
+
         }
-        else {
-            stringToReturn = this.head.toString();
-        }
+        stringToReturn = stringToReturn +" "+ this.head.toString();
+
         return stringToReturn;
     }
 }

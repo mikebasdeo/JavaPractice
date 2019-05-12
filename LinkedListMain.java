@@ -10,6 +10,7 @@ public class LinkedListMain {
 
         //try to make a linked list here. return the toString of the Node.
         LinkedList myLinkedList = new LinkedList();
+        myLinkedList.addToHead(6);
         myLinkedList.addToHead(5);
         myLinkedList.addToHead(4);
         myLinkedList.addToHead(3);
