@@ -1,6 +1,8 @@
 /**
- * Write a method to replace all spaces in a string given a replacement string
+ * Write a method to replace all spaces in a string with a given replacement string
  * */
+
+
 package FiraCode_Level_01_02.solutions;
 
 public class ReplaceAllSpaces {
