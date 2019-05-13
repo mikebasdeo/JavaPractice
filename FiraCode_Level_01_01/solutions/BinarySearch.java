@@ -1,3 +1,7 @@
+/**
+ * Binary search through a sorted array of integers and find a specific value.
+ * */
+
 package FiraCode_Level_01_01.solutions;
 
 public class BinarySearch {
