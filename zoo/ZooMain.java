@@ -1,7 +1,7 @@
 /**
  * - Java fundamentals practice
  *
- * @staticmethod: testMethod() - static method example inside the helpers package
+ * @staticmethod: testMethod() - static method example inside the solutions package
  *
  * @class: Animal inside linked_list package. Implements interface from 'helper/AnimalInterface.java'
  * @class: Dog inherits from Animal within the linked_list package
@@ -16,14 +16,14 @@ public class ZooMain {
 
     public static void main(String[] args) {
 
-        // static method imported from helpers package
+        // static method imported from solutions package
         helpers.testMethod();
 
         // object imported from linked_list package
         Animal myBird = new Animal("Iago", "Bird", 2);
 
         // Create a Dog object which inherits from Animal
-        Dog myDog = new Dog("Margo", "German Shepard", 4);
+        Animal myDog = new Dog("Margo", "German Shepard", 4);
 
         System.out.println(myBird.toString());
         System.out.println(myBird.getNumOfLegs());
