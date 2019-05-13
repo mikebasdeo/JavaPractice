@@ -1,3 +1,8 @@
+/**
+ * Singleton Design Pattern.
+ * */
+
+
 package singleton;
 
 import java.util.Arrays;
