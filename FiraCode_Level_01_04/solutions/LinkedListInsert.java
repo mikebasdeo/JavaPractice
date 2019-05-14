@@ -10,6 +10,8 @@ class ListNode {
     ListNode(int data) { this.data = data; }
 }
 
+
+
 public class LinkedListInsert {
 
     public static void main (String[] args){
@@ -26,5 +28,13 @@ public class LinkedListInsert {
         }
         // do stuff here
         currentNode.next = new ListNode(data);
+    }
+
+    public static ListNode deleteAtHead(ListNode head){
+
+        if(head != null){
+            head = head.next;
+        }
+        return head;
     }
 }

@@ -26,7 +26,6 @@ public class UniqueCharInString {
             } else {
                 myDictionary.put(currentCharacter, 1);
             }
-
         }
 
         System.out.println(myDictionary);
@@ -40,14 +39,11 @@ public class UniqueCharInString {
                 answer = false;
             }
         }
-
-
         return answer;
     }
 
     public static void main (String[] args){
         String testString = "abbccc";
         areAllCharactersUnique(testString);
-
     }
 }
