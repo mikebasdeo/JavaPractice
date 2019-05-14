@@ -26,8 +26,5 @@ public class LinkedListInsert {
         }
         // do stuff here
         currentNode.next = new ListNode(data);
-
     }
-
-
 }
