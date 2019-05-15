@@ -2,7 +2,7 @@
  * Insert Something at the end of a Linked List
  * */
 
-package FiraCode_Level_08.solutions;
+package FiraCode_Level_01_08.solutions;
 
 import java.util.*;
 

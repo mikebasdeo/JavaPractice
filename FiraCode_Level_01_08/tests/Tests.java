@@ -1,4 +1,4 @@
-package FiraCode_Level_08.tests;
+package FiraCode_Level_01_08.tests;
 
 
 public class Tests {
