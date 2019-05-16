@@ -1,7 +1,7 @@
 /**
  * - Linked List Implementation
  * - Singly-linked
- * - add to front only
+ * - add to head only
  *
  */
 
