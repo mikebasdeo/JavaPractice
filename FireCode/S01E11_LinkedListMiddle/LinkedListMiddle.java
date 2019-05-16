@@ -78,6 +78,22 @@ class LinkedList {
         return slowPointer;
     }
 
+    public ListNode deleteAtTail(ListNode head){
+        //1. delete the last node
+        //2. return the head
+        ListNode currentNode = head;
+
+        while(currentNode.next.next != null){
+            currentNode = currentNode.next;
+        }
+        //now the current node is the second last node
+        currentNode.next = null;
+
+        return  head;
+    }
+
+
+
 }
 public class LinkedListMiddle {
 
@@ -93,9 +109,13 @@ public class LinkedListMiddle {
         myList.addToHead(2);
         myList.addToHead(1);
 
+//        myList.printList();
+//        myList.findMiddleNode(myList.head);
+//        System.out.println((myList.findMiddleNode(myList.head)).data);
+
         myList.printList();
-        myList.findMiddleNode(myList.head);
-        System.out.println((myList.findMiddleNode(myList.head)).data);
+        myList.deleteAtTail(myList.head);
+        myList.printList();
 
     }
 
