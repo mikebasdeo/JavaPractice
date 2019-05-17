@@ -1,7 +1,5 @@
 package FireCode.S01E12_MatrixVerticalFlip;
 
-import java.util.Arrays;
-
 public class MatrixVerticalFlip {
 
     public static void flipVerticalAxis(int[][] matrix){

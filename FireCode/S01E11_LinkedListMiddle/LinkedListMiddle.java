@@ -1,7 +1,5 @@
 package FireCode.S01E11_LinkedListMiddle;
 
-import java.util.List;
-
 class ListNode{
     // attributes
     int data;
