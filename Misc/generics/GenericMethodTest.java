@@ -12,7 +12,7 @@ public class GenericMethodTest {
     }
 
     public static void testMethod(){
-        System.out.println("Test");
+        System.out.println("S01E01_TwoSum");
     }
 
     public static void main(String args[]) {
