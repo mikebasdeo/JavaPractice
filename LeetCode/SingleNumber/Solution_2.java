@@ -1,7 +1,5 @@
 package LeetCode.SingleNumber;
 
-
-
 public class Solution_2 {
     public static int singleNumber(int[] nums){
         int answer = 0;
