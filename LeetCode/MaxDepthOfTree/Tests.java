@@ -8,13 +8,12 @@ public class Tests {
     @Test
     public void MaxDepthOfTreeTests(){
 
-        // This should return a depth of 3
+        // This should return a depth of 4
         TreeNode testTree = new TreeNode(3);
         testTree.left = new TreeNode(9);
         testTree.right = new TreeNode(20);
         testTree.right.left = new TreeNode(15);
         testTree.right.right = new TreeNode(7);
-
         testTree.right.left.right = new TreeNode(10);
 
 

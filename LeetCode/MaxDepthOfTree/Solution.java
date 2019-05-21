@@ -1,70 +1,55 @@
-package LeetCode.MaxDepthOfTree;
+/**
+ * Given a binary tree, find its maximum depth.
+ The maximum depth is the number of nodes along the longest path from the root node down to the farthest leaf node.
+ Note: A leaf is a node with no children.
 
-import javafx.scene.layout.Priority;
-import java.util.*;
+ Example:
+
+ Given binary tree [3,9,20,null,null,15,7],
+ * */
+
+package LeetCode.MaxDepthOfTree;
 
 class TreeNode {
     int val;
     TreeNode left;
     TreeNode right;
-
     TreeNode(int x){
         val = x;
     }
-
 }
-
 
 public class Solution {
 
-
     //attributes
-
     public static int currentMax = 0;
 
     public static void checkIfNewMax(int newMax){
-        System.out.println("CM: " + currentMax + "    -->  NM: "+ newMax);
         if(newMax > currentMax){
             currentMax = newMax;
         }
-
     }
-
-
-
 
     public static int maxDepth(TreeNode root){
         currentMax = 0;
 
-        TreeNode head = root;
-
         if(root == null){
             return 0;
         }
-
-        int returnedValue = recursiveEndOfTree(head, 1);
-        System.out.println("Returned Value: " + returnedValue);
-
+        recursiveEndOfTree(root, 1);
         return currentMax;
     }
 
     public static int recursiveEndOfTree(TreeNode currentNode, int counter){
 
-        System.out.println("Current Node Value: " + currentNode.val + "   -->   Counter:" + counter);
-
-
         //base case
         if(currentNode.left == null && currentNode.right == null){
-            System.out.println("Leaf: "+ currentNode.val);
-
             checkIfNewMax(counter);
             return 1;
         }
 
-        if(currentNode.left == null){
-
-        }
-
+        // recursive step.
+        //TODO : Do This nicer?
         if(currentNode.left != null && currentNode.right != null){
             counter = recursiveEndOfTree(currentNode.left, counter+1) + recursiveEndOfTree(currentNode.right, counter+1);
         } else if(currentNode.left == null){
@@ -72,10 +57,6 @@ public class Solution {
         } else {
             counter = recursiveEndOfTree(currentNode.left, counter+1);
         }
-
-
-
-        //counter = recursiveEndOfTree(currentNode.left, counter) + recursiveEndOfTree(currentNode.right, counter);
         return counter;
     }
 
