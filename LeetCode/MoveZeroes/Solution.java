@@ -17,8 +17,20 @@ import java.util.Arrays;
 public class Solution {
 
     public static int[] moveZeroes(int[] nums){
+        int counter = 0;
+        boolean swapped = true;
 
-        System.out.print(Arrays.toString(nums));
+        while(swapped == true){
+            counter++;
+            swapped = false;
+            for(int i = 0; i < nums.length-counter; i++){
+                if(nums[i] == 0){
+                    swapped = true;
+                    nums[i] = nums[i+1];
+                    nums[i+1] = 0;
+                }
+            }
+        }
         return nums;
     }
 }
