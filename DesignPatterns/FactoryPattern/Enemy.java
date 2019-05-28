@@ -1,4 +1,4 @@
-package DesignPatterns.Factory;
+package DesignPatterns.FactoryPattern;
 
 public abstract class Enemy {
 
