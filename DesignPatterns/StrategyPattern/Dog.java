@@ -1,3 +1,8 @@
+/**
+ * Calls the CantFly class
+ * @see Flys.java
+ */
+
 package DesignPatterns.StrategyPattern;
 
 public class Dog extends Animal {

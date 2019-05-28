@@ -1,3 +1,9 @@
+/**
+ * Run program from here.
+ *
+ * Please try to keep the animals in the zoo (hashmap).
+ */
+
 package DesignPatterns.StrategyPattern;
 
 import org.junit.Test;

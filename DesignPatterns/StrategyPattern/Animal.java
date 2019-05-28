@@ -1,3 +1,10 @@
+/**
+ * This is an abstract class to be used when creating
+ * a specific animal. It implements the 'Strategy Pattern'
+ * through the use of the Flys(interface) object.
+ * @see Flys.java
+ */
+
 package DesignPatterns.StrategyPattern;
 
 public abstract class Animal {
@@ -11,13 +18,5 @@ public abstract class Animal {
 
     public String printName(){
         return "Animal Name: " + this.name;
-    }
-
-    public boolean doIFly(){
-        return flyingType.fly();
-    }
-
-    public void SetFlyingType(Flys newFlyType){
-        flyingType = newFlyType;
     }
 }
