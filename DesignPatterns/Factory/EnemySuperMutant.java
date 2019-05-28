@@ -1,4 +1,4 @@
-package DesignPatterns.FactoryPattern;
+package DesignPatterns.Factory;
 
 public class EnemySuperMutant extends Enemy {
 
