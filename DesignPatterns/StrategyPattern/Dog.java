@@ -7,5 +7,6 @@ public class Dog extends Animal {
     Dog(String name){
         super(name);
         numOfLegs = 4;
+        flyingType = new CantFly();
     }
 }

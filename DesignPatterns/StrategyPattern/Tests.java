@@ -12,13 +12,13 @@ public class Tests {
         Animal myDog = new Dog("Spot");
         Animal myBird = new Bird("Falcor");
 
-        Map<Animal, Integer> zoo = new HashMap<Animal, Integer>();
+        Map<Animal, Flys> zoo = new HashMap<Animal, Flys>();
 
-        zoo.put(myDog, 1);
-        zoo.put(myBird, 2);
+        zoo.put(myDog, myDog.flyingType);
+        zoo.put(myBird, myBird.flyingType);
 
         for(Animal currentAnimal: zoo.keySet()){
-            System.out.println(currentAnimal.printName() + zoo.get(currentAnimal));
+            System.out.println(currentAnimal.printName() + zoo.get(currentAnimal).fly());
         }
     }
 }
