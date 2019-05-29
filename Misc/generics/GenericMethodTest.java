@@ -11,14 +11,7 @@ public class GenericMethodTest {
         System.out.println();
     }
 
-    public static void testMethod(){
-        System.out.println("S01E01_TwoSum");
-    }
-
     public static void main(String args[]) {
-
-        // hook up static method
-        testMethod();
 
         // Create arrays of Integer, Double and Character
         Integer[] intArray = { 1, 2, 3, 4, 5 };

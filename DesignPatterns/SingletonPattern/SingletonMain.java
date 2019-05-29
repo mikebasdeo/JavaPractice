@@ -1,5 +1,5 @@
-package Misc.singleton;
-import Misc.singleton.helpers.Helpers;
+package DesignPatterns.SingletonPattern;
+import DesignPatterns.SingletonPattern.helpers.Helpers;
 
 
 public class SingletonMain {

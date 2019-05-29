@@ -3,7 +3,7 @@
  * */
 
 
-package Misc.singleton;
+package DesignPatterns.SingletonPattern;
 
 import java.util.Arrays;
 import java.util.LinkedList;
