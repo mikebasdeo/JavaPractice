@@ -10,7 +10,7 @@ public class OperationDefinition {
 
     OperationDefinition(int listSize){
         for(int i = 0; i < listSize; i++){
-            this.myList.add(i, i*10);
+            this.myList.add(i, i*1);
         }
     }
     //methods

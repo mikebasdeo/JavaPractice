@@ -8,8 +8,6 @@ import java.util.List;
 import java.util.Map;
 
 
-
-
 public class Tests {
 
     @Test
@@ -19,6 +17,6 @@ public class Tests {
         Map<Long, String> theMainMap = new HashMap<Long, String>();
         OperSummary sum = new OperSummary();
 
-        Assert.assertEquals(0, WantsToBeChanged.performOperation(op, theMainMap,  sum));
+        Assert.assertEquals(9, WantsToBeChanged.performOperation(op, theMainMap,  sum));
     }
 }
