@@ -11,11 +11,27 @@ public class Solution {
 
     public int countSeniorEmployeesInCity(Connection c, String city) throws SQLException {
 
-
-        String updateString =
-                "update " + dbName + ".COFFEES " +
-                        "set SALES = ? where COF_NAME = ?";
-        updateSales = con.prepareStatement(updateString);
+/*
+    (
+        SELECT DISTINCT COUNT(EMPL.EMP_ID) as result
+        FROM
+        EMPL, CITY
+        WHERE
+        EMPL.EMP_SENIOR = 'Y'
+        AND
+        EMPL.CITY_ID = CITY.CITY_ID
+        AND
+        CITY.CITY_NAME = 'Montreal'
+    )
+*/
+        PreparedStatement stm = c.prepareStatement("SELECT DISTINCT COUNT(EMPL.EMP.ID) as result " +
+                                                        "FROM " +
+                                                            "EMPL, CITY " +
+                                                        "WHERE " +
+                                                            "EMPL.EMP_SENIOR = 'y' " +
+                                                        "AND " +
+                                                            "EMPL.CITY_ID = CITY.CITY_ID " +
+                                                        "AND CITY.CITY_NAME = \n");
 
 
 
