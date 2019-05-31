@@ -1,5 +1,7 @@
 package Misc.Infor_Interview_3;
 
+
+
 public class Solution {
 
     public static int u(int a, int c) {

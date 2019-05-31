@@ -1,0 +1,28 @@
+group: Infor
+
+EMPLOYEE = {
+	eID:number, emp_city_ID:number, emp_senior:string
+	111, 11111, Y
+	222, 22222, Y
+	333, 22222, Y
+	444, 11111, N
+}
+
+CITY = {
+	cityID:number, city_name:string
+	11111, Toronto
+	22222, Montreal
+}
+
+(
+    SELECT DISTINCT COUNT(EMPLOYEE.eID) as result
+    FROM
+        EMPLOYEE, CITY
+    WHERE
+    EMPLOYEE.emp_senior = 'Y'
+    AND
+    EMPLOYEE.emp_city_ID = CITY.cityID
+    AND
+    CITY.city_name = 'Montreal'
+
+)
