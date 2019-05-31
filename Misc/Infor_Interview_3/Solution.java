@@ -14,19 +14,11 @@ public class Solution {
 
         int temp1 = u(a,c);
 
-
         if(a < temp1){
-            if(b == c){
-                return false;
-            }
-            else {
-                return true;
-            }
+            boolean result = (b == c) ? false : true;
+            return result;
         }
-
-
         return false;
     }
-
 
 }
