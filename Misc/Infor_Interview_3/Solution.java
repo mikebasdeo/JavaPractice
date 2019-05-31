@@ -14,15 +14,16 @@ public class Solution {
 
         int temp1 = u(a,c);
 
-        
 
-        if((a < temp1     &&        b < c)){
-            return true;
+        if(a < temp1){
+            if(b < c){
+                return true;
+            }
+            if (b > c) {
+                return true;
+            }
         }
 
-        if ((a < temp1    &&    b > c)) {
-            return true;
-        }
 
 
         return false;
