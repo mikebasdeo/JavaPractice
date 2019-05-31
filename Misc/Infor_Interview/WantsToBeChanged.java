@@ -45,6 +45,8 @@ public class WantsToBeChanged {
     public static int performOperation(OperationDefinition op, Map<Long, String> theMainMap, OperSummary sum) {
         for (int d = 0; d < op.getOperationDetailsStore().size(); d++) {
 
+            System.out.println(op.myList);
+
             //create a new object called opDetails. Find a way to get this to pass.
             // should NOT be an Integer. but what??
 
