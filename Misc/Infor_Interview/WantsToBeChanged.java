@@ -45,13 +45,17 @@ public class WantsToBeChanged {
     public static int performOperation(OperationDefinition op, Map<Long, String> theMainMap, OperSummary sum) {
         for (int d = 0; d < op.getOperationDetailsStore().size(); d++) {
 
-            System.out.println(op.myList);
+            //System.out.println(op.myList);
 
-            //create a new object called opDetails. Find a way to get this to pass.
-            // should NOT be an Integer. but what??
+            // create a new object called opDetails. Find a way to get this to pass.
+            // maybe should NOT be an Integer. but what??
+            // I'm confused here...best guess is to just make a regular constructor for OperationDetail,
+            // and then create an attribute for the current loop.
+            OperationDetail opDetails = new OperationDetail();
+            opDetails.setOperationDetailsStore(op.getOperationDetailsStore().get(d));
 
-
-//            OperationDetail opDetails = op.getOperationDetailsStore().get(d);
+            System.out.println(opDetails.getOperationDetailsStore());
+//
 //            if (opDetails.getOpStatusId() == 1 || opDetails.getOpStatusId() == 3 || opDetails.getOpStatusId() == 4) {
 //                sum.setOpCond(true);
 //                if (opDetails.getRelblkId() != null && opDetails.getOperationsumRefId() != null &&

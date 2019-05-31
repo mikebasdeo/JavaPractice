@@ -5,11 +5,14 @@ public class OperationDetail {
     int opStatusID;
 
     //constructors
-    OperationDetail(int x){
+    OperationDetail(){
 
     }
     //methods
-    public int getOpStatusId(){
+    public void setOperationDetailsStore(int detailStoreNum){
+        this.opStatusID = detailStoreNum;
+    }
+    public int getOperationDetailsStore(){
         return this.opStatusID;
     }
 }
