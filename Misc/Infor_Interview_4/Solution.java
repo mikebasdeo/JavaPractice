@@ -11,44 +11,18 @@ public class Solution {
 
     public int countSeniorEmployeesInCity(Connection c, String city) throws SQLException {
 
-/*
-    (
-        SELECT DISTINCT COUNT(EMPL.EMP_ID) as result
-        FROM
-        EMPL, CITY
-        WHERE
-        EMPL.EMP_SENIOR = 'Y'
-        AND
-        EMPL.CITY_ID = CITY.CITY_ID
-        AND
-        CITY.CITY_NAME = 'Montreal'
-    )
-*/
-        PreparedStatement stm = c.prepareStatement("SELECT DISTINCT COUNT(EMPL.EMP.ID) as result " +
+        PreparedStatement ps = c.prepareStatement("SELECT DISTINCT COUNT(EMPL.EMP.ID) as numActive " +
                                                         "FROM " +
                                                             "EMPL, CITY " +
                                                         "WHERE " +
-                                                            "EMPL.EMP_SENIOR = 'y' " +
+                                                            "EMPL.EMP_SENIOR='y' " +
                                                         "AND " +
-                                                            "EMPL.CITY_ID = CITY.CITY_ID " +
-                                                        "AND CITY.CITY_NAME = \n");
-
-
-
-        PreparedStatement ps = c.prepareStatement("SELECT EMP_ID, EMP_SENIOR FROM EMPL, CITY WHERE CITY_NAME EQUALS ?");
+                                                            "EMPL.CITY_ID=CITY.CITY_ID " +
+                                                        "AND CITY.CITY_NAME=?");
         ps.setString(1, city);
         ResultSet rs = ps.executeQuery();
-
-        int numActive = 0;
-        while (rs.next()) {
-            if ("Y".equals(rs.getString("EMP_SENIOR"))) {
-                numActive++;
-            }
-        }
-
+        int numActive =  rs.getInt(1);
         ps.close();
         return numActive;
     }
-
-
 }
