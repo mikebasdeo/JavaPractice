@@ -16,14 +16,13 @@ public class Solution {
 
 
         if(a < temp1){
-            if(b < c){
-                return true;
+            if(b == c){
+                return false;
             }
-            if (b > c) {
+            else {
                 return true;
             }
         }
-
 
 
         return false;
