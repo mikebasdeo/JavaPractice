@@ -2,21 +2,17 @@ package Misc.Infor_Interview;
 
 import org.junit.Test;
 import org.junit.Assert;
-
-
-
-
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
-
+import java.util.Map;
 
 class OperationDefinition {
     // attributes
     List<Integer> list = new ArrayList<Integer>();
 
-    //    OperationDefinition(int value){
-//        this.value = value;
-//    }
+    OperationDefinition(){
+    }
     //methods
     public List<Integer> getOperationDetailsStore(){
         return this.list;
@@ -28,12 +24,13 @@ class OperSummary{
     boolean opCond;
 
     // constructors
+    OperSummary(){
+
+    }
     // methods
     public void setOpCond(boolean change){
         this.opCond = change;
     }
-
-
 }
 
 class OperationDetail {
@@ -50,16 +47,14 @@ class OperationDetail {
     }
 }
 
-
-
-
-
 public class Tests {
 
+    @Test
     public void WantsToBeChanged(){
-
-        Assert.assertEquals(0, WantsToBeChanged.performOperation());
+        // Parameters to pass
+        OperationDefinition op = new OperationDefinition();
+        Map<Long, String> theMainMap = new HashMap<Long, String>();
+        OperSummary sum = new OperSummary();
+        Assert.assertEquals(0, WantsToBeChanged.performOperation(op, theMainMap,  sum));
     }
-
-
 }

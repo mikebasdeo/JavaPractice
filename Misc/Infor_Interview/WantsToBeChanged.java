@@ -35,7 +35,7 @@ import java.util.Map;
 
 
 public class WantsToBeChanged {
-    
+
     /**
      * @param op
      * @param theMainMap
