@@ -12,8 +12,15 @@ public class Solution {
 
     public static boolean funToMakeSimpler(int a, int b, int c) {
 
+        int temp1 = u(a,c);
 
-        if (a < u(a, c) && b < c || a < u(a, c) && b > c && c < b) {
+        
+
+        if((a < temp1     &&        b < c)){
+            return true;
+        }
+
+        if ((a < temp1    &&    b > c)) {
             return true;
         }
 
