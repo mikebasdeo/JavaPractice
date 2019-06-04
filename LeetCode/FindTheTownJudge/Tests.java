@@ -20,15 +20,11 @@ public class Tests {
         Assert.assertEquals(3, Solution.findJudge(4, testArray));
 
         int[][] testArray2 = {
-
                 {1,2},
                 {2,3},
         };
 
         Assert.assertEquals(-1, Solution.findJudge(3, testArray2));
-
-
-
     }
 
 }
