@@ -39,7 +39,8 @@ public class QuickSort {
         int border = low + 1;
         for(int i = border; i <= high; i++){
             if(A[i] < A[low]){
-                swap(A, i, border++);
+                swap(A, i, border);
+                border++;
             }
         }
         // place pivot in correct position
