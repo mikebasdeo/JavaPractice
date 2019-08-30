@@ -20,7 +20,7 @@ public class Tests {
         TreeNode testTree2 = new TreeNode((1));
 
         TreeNode testTree3 = null;
-
+        String testString = "test";
 
         Assert.assertEquals(4, Solution.maxDepth(testTree));
         Assert.assertEquals(1, Solution.maxDepth(testTree2));
