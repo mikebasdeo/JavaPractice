@@ -14,33 +14,35 @@ public class Solution {
 
     public static int maxIncreaseKeepingSkyline(int[][] grid){
 
-        System.out.println(Arrays.deepToString(grid));
-        // step 1, find the top/bottom skyline
-        int currentValue = 0;
-        int currentMax = 0;
-        int[] topSkyline = new int[grid[0].length];
-        for(int j = 0; j < grid[0].length; j++){
 
-            for(int i = 0; i < grid.length; i++){
-                //take first value from all four inner lists
-                currentValue = grid[i][j];
+        int n = grid.length;
+        int[] row = new int[n];
+        int[] col = new int[n];
 
-                if(currentValue > currentMax){
-                    currentMax = currentValue;
-                }
-                System.out.println(currentValue);
+
+        for(int i = 0; i < n; i++){
+            for(int j = 0; j < n; j++){
+                row[i] = Math.max(row[i], grid[i][j]);
+                col[j] = Math.max(col[j], grid[i][j]);
             }
-
-            topSkyline[j] = currentMax;
-            currentMax = 0;
-            System.out.println("next");
         }
-        System.out.println(Arrays.toString(topSkyline));
+
+        //check
+        System.out.println(Arrays.toString(row));
+        System.out.println(Arrays.toString(col));
+
+        // now find the max increase
+        int answer = 0;
+
+        for(int i = 0; i < n; i++){
+            for(int j = 0; j < n; j++){
+                answer += Math.min(row[i], col[j]) - grid[i][j];
+            }
+        }
 
 
-
-
-        return 69;
+        return answer;
     }
+
 
 }

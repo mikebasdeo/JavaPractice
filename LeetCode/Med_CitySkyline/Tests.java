@@ -14,9 +14,9 @@ public class Tests {
     @Test
     public void testThisThing(){
 
-        int[][] myArray = {{3,0,8,4,1},{2,4,5,7,1},{9,2,6,3,1},{0,3,1,0,1}};
+        int[][] myArray = {{3,0,8,4},{2,4,5,7},{9,2,6,3},{0,3,1,0}};
 
 
-        Assert.assertEquals(69, Solution.maxIncreaseKeepingSkyline(myArray));
+        Assert.assertEquals(35, Solution.maxIncreaseKeepingSkyline(myArray));
     }
 }
